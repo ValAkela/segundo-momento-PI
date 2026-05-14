@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>PQRS</title>
     <link rel="stylesheet" href="styless.css/styless.css">
 </head>
 <body>
@@ -16,18 +16,54 @@
             <ul>
                 <li><a href="proyecto.html">Inicio</a></li>
                 <li><a href="formulario.html">Contacto</a></li>
-                <li><a href="pqrs.html">PQRS</a></li> 
-                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="pqrs.html">Quiénes somos</a></li> 
+                <li><a href="nosotros.html">PQRS</a></li>
                 <li><label for="">Servicios:</label>
                     <select name="" id="">
                         <option value=""></option>
-                        <option value="" style="font-family: sans-serif; font-style: italic;"></option>
-                        <option value=""style="font-family: sans-serif; font-style: italic;"></option>
-                        <option value=""style="font-family: sans-serif; font-style: italic;"></option>
+                        <option value="">Consultoria y diseño</option>
+                        <option value="">Instalación y mantenimiento</option>
+                        <option value="">Financiación</option>
                     </select>
                 </li>
              </ul>
         </nav>   
     </header>
+
+     <fieldset>
+        <legend id="titulo">FORMULARIO PQRS</legend>
+        <form action="">
+            <label for="name">Nombre completo: * </label>
+            <input type="text" name="name" required>
+
+            <label for="id">Número de documento: * </label>
+            <input type="number" name="id" required>
+
+            <label for="correo">Correo eléctronico: * </label>
+            <input type="email" name="correo" required>
+
+            <label for="city">Ciudad: </label>
+            <input type="text" name="city">
+
+            <label for="tel">Teléfono de contacto: * </label>
+            <input type="number" name="tel" required>
+
+            <label for="cot">Número de cotización: * </label>
+            <input type="text" name="cot" required>
+
+            <label for="mensaje">Mensaje: * </label>
+            <textarea name="mensaje" id="" required></textarea> 
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </form>
+    </fieldset>
+    
+    <img class="whatsapp" src="images/whatsapp.jfif" alt="" width="70">
+
+    <footer>
+        <p>&copy; 2026 solarvida todos los derechos reservados </p>
+    </footer>
 </body>
 </html>

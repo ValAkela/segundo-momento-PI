@@ -1,14 +1,14 @@
 
 #imagen {
     position: relative;
-    margin-left: 500px;
+    margin-left: 600px;
     margin-bottom: 0px;
     background-color: rgb(173, 168, 168);
 }
 
 #titulo {
     position: relative;
-    margin-left: 450px;
+    margin-left: 550px;
     font-style: italic;
     color: rgb(9, 55, 61);
     font-size:xx-large;
@@ -21,29 +21,42 @@ nav {
     position: sticky;
     background-color: rgb(224, 224, 112);
 }
-nav h1 {
-    display:inline-block;
-    border-radius: 30px;
-    position: sticky;
-    left: 40px; 
-    font-family: sans-serif;
-}
 
 nav ul{
+    text-decoration: none;
     display: inline-block;
-    padding: 0%;
     margin: 0%;
 }
 
-nav li {
+li a:hover {
+    border-radius: 5px;
+    background-color:  rgb(245, 193, 52);
+}
+
+li a {
     text-decoration: none;
+    color:  rgb(9, 55, 61);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+nav li{
     font-size: bold;
-    font-family: sans-serif;
-    display: inline-block;
-    list-style: none;
-    padding-left: 100px; 
+    font-style: italic;
+    padding-left: 50px; 
+    padding-right: 50px;
     list-style: none; 
     display: inline-block;
+}
+
+li label{
+    display: inline-block;
+    color: rgb(9, 55, 61);
+}
+
+option {
+    font-family:sans-serif; 
+    font-style: italic;
 }
 
 #flyer {
@@ -55,20 +68,7 @@ nav li {
     color: rgb(26, 105, 2);
     text-align: center;
     font-style: italic;
-    
 }
-.nombre {
-    display: inline-block;
-    left: 300px;
-    font-size: 80px;
-    background-color: rgb(204, 204, 224);
-    border-radius: 10%;
-    color: rgba(28, 88, 99, 0.692);
-    text-shadow:rgba(12, 12, 75, 0.562) 1px 2px 2px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: oblique;
-
-} 
 
 .class{ color: rgba(20, 55, 61, 0.692);
     border: 2px solid;
@@ -103,17 +103,94 @@ article {
 
 footer {
     margin-top:  100px;
+    margin-bottom: 0;
 }
 
 fieldset {
     margin-top:  70px;
 }
 
-#label {
+input:focus {
+    background-color: rgb(159, 172, 155);
+    border: 3px solid rgba(20, 55, 61, 0.692);
+}
+
+label {
+    display: block;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
-    border-radius: 30px;
-    font-family: sans-serif;
+    border-radius: 10px;
     font-style: italic;
     background-color: rgb(224, 224, 112);
     font-weight: bold;
 }
+
+button{
+    display: block;
+    margin: 10px;
+
+}
+
+button:hover{
+    background-color: rgb(224, 224, 112);
+    border: 2px solid rgba(20, 55, 61, 0.692);
+}
+
+#mision {
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+    color: rgba(20, 55, 61, 0.692);
+    background-color: rgb(224, 224, 112);
+    border-radius: 10px;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+#parrafomision{
+    font-size: 25px;
+    text-align: left;
+}
+
+#vision {
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+    color: rgba(20, 55, 61, 0.692);
+    background-color: rgb(224, 224, 112);
+    border-radius: 10px;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+#parrafovision{
+    font-size: 25px;
+    text-align: left;
+}
+
+.imagenpanel{
+    margin-top: 10px;
+}
+
+#valores {
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+    color: rgba(20, 55, 61, 0.692);
+    background-color: rgb(224, 224, 112);
+    border-radius: 10px;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+section ul{
+    font-size: 25px;
+    text-align: left;
+    padding-left: 50px; 
+    padding-right: 50px;
+
+}
+
+
