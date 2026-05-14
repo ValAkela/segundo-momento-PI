@@ -1,0 +1,31 @@
+#imagen {
+    position: relative;
+    margin-left: 500px;
+    margin-bottom: 0px;
+    background-color: rgb(173, 168, 168);
+}
+
+#titulo {
+    position: relative;
+    margin-left: 450px
+
+    ;
+}
+.nombre {
+    display: inline-block;
+    left: 300px;
+    font-size: 80px;
+    background-color: rgb(204, 204, 224);
+    border-radius: 10%;
+    color: rgba(28, 88, 99, 0.692);
+    text-shadow:rgba(12, 12, 75, 0.562) 1px 2px 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+
+} 
+
+.class{ color: rgba(20, 55, 61, 0.692);
+    border: 2px solid;
+    border-radius: 50%;
+    margin-right: 200px;
+    }
