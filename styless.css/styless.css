@@ -1,4 +1,16 @@
+body {
+    font-family: sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8ef;
+    color: #333333;
+}
 
+header {
+    background-color: rgb(224, 224, 112);
+    margin-top: 20px;
+}
 #imagen {
     position: relative;
     margin-left: 600px;
@@ -193,4 +205,6 @@ section ul{
 
 }
 
+fieldset {
 
+}
