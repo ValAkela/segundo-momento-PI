@@ -3,24 +3,33 @@ body {
     font-style: italic;
     margin: 0;
     padding: 0;
-    background-color: #fff8ef;
+    background-color: white;
     color: #333333;
 }
-
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
 header {
     background-color: rgb(224, 224, 112);
     margin-top: 20px;
+    padding-top: 5px;
 }
 #imagen {
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
     margin-left: 600px;
     margin-bottom: 0px;
-    background-color: rgb(173, 168, 168);
 }
+h1 {
+    margin: 5px;
+}
+
 
 #titulo {
     position: relative;
     margin-left: 550px;
+    font-family: sans-serif;
     font-style: italic;
     color: rgb(9, 55, 61);
     font-size:xx-large;
@@ -39,19 +48,6 @@ nav ul{
     display: inline-block;
     margin: 0%;
 }
-
-li a:hover {
-    border-radius: 5px;
-    background-color:  rgb(245, 193, 52);
-}
-
-li a {
-    text-decoration: none;
-    color:  rgb(9, 55, 61);
-    font-weight: bolder;
-    font-style: italic;
-}
-
 nav li{
     font-size: bold;
     font-style: italic;
@@ -60,15 +56,53 @@ nav li{
     list-style: none; 
     display: inline-block;
 }
+li a {
+    text-decoration: none;
+    color:  rgb(9, 55, 61);
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px;
+}
+li a:hover {
+    border-radius: 5px;
+    background-color:  rgb(245, 193, 52);
 
-li label{
+}
+.menu-desplegable {
+    position: relative;
     display: inline-block;
-    color: rgb(9, 55, 61);
+    vertical-align: top;
 }
 
-option {
-    font-family:sans-serif; 
-    font-style: italic;
+.menu-desplegable-menu {
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    top: 100%;
+    left: 0;
+    background-color:  rgb(224, 224, 112);
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgb(9, 55, 61);
+    z-index: 1000;
+    min-width: 180px;    
+}
+
+.menu-desplegable:hover .menu-desplegable-menu {
+    display: block;
+}
+
+.menu-desplegable li a {
+    display: block;
+    padding: 3px 8px;
+    text-decoration: none;
+    color:  rgb(9, 55, 61);
+}
+
+.menu-desplegable li a:hover {
+    background-color:  rgb(245, 193, 52);
+    
 }
 
 #flyer {
