@@ -6,23 +6,18 @@ body {
     background-color: white;
     color: #333333;
 }
+
 a {
     text-decoration: none;
     cursor: pointer;
 }
-header {
-    background-color: rgb(224, 224, 112);
-    margin-top: 20px;
-    padding-top: 5px;
-}
+/*LOGO*/
 #imagen {
     display: flex;
     margin-left: 600px;
     margin-bottom: 0px;
 }
-h1 {
-    margin: 5px;
-}
+/*LEMA*/
 #titulo {
     position: relative;
     margin-left: 550px;
@@ -31,6 +26,13 @@ h1 {
     color: rgb(9, 55, 61);
     font-size:xx-large;
 }
+/*MENU DE NAVEGACION*/
+header {
+    background-color: rgb(224, 224, 112);
+    margin-top: 20px;
+    padding-top: 5px;
+}
+/*INFORMACION DEL HEADER- LISTA*/
 nav {
     padding: 10px;
     top: 0;
@@ -40,6 +42,7 @@ nav {
     background-color: rgb(224, 224, 112);
     z-index: 1000;
 }
+
 nav ul{
     text-decoration: none;
     display: flex;
@@ -56,6 +59,7 @@ nav li{
     list-style: none; 
     display: inline-block;
 }
+
 li a {
     text-decoration: none;
     color:  rgb(9, 55, 61);
@@ -63,17 +67,17 @@ li a {
     font-style: italic;
     padding: 10px;
 }
+
 li a:hover {
     border-radius: 5px;
     background-color:  rgb(245, 193, 52);
     border: 2px solid rgba(20, 55, 61, 0.692);
-
 }
+/*NUESTROS SERVICIOS*/
 .menu-desplegable {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    
 }
 
 .menu-desplegable-menu {
@@ -106,36 +110,19 @@ li a:hover {
     background-color:  rgb(245, 193, 52);
     
 }
-
-.parrafo {
-    font-size: xx-large;
-    color: rgb(26, 105, 2);
-    text-align: center;
-    font-style: italic;
-}
-
-.class{ color: rgba(20, 55, 61, 0.692);
-    border: 2px solid;
-    border-radius: 50%;
-    margin-right: 200px;
-}
+/*SECTION DEL FORMULARIO*/
 .contenedor {
     position: relative; 
     width: 100%;
 }
+/*IMAGEN DE BANNER*/
 #flyer {
     margin-top: 10px;
     margin-bottom: 30px;
     display: block;
     width: 100%;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    border-radius: 20px;
-}
+/*FORMULARIO*/
 main section fieldset {
     position: absolute;
     top: 50%;
@@ -146,21 +133,38 @@ main section fieldset {
     border-radius: 12px;
     padding: 50px 5px;
     border: none;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 12px  rgb(9, 55, 61);
     z-index: 1;
 }
-.instalaciones{
-    width: 100%;
-    text-align: center;
-    background-color: rgb(224, 224, 112);
-    padding: 10px;
-    margin-bottom: 10px;
-}
+
 #titulo-formulario{
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+}
+
+input:focus {
+    border: 4px solid  rgb(9, 55, 61);
+}
+
+label {
+    display: block;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+    background-color: rgb(224, 224, 112);
+    font-weight: bold;
 }
 section .botones{
      display: flex;
@@ -170,14 +174,48 @@ section .botones{
     gap: 10px;
     padding-top: 30px;
 }
-input:focus {
-    
-    border: 4px solid rgba(0, 0, 0, 0.2);
+
+button:hover{
+    background-color: rgb(224, 224, 112);
+    border: 2px solid rgba(20, 55, 61, 0.692);
 }
+
+/*PREGUNTA*/
+.pregunta {
+    position: flex;
+    text-align: center;
+    background-color:  rgb(224, 224, 112) ;
+    font-family: sans-serif;
+    font-style: italic;
+    color: rgb(9, 55, 61);
+    font-size:xx-large;
+    padding: 10px;
+    
+}
+/*RESPUESTA*/
+.respuesta {
+    color: #40a34b;
+    font-size:x-large;
+    font-family: sans-serif;
+    font-style: italic;
+    border: 3px solid rgb(9, 55, 61);
+    border-radius: 20px;
+    padding: 80px;
+}
+/*TABLA CON IMAGENES*/
+.instalaciones{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(224, 224, 112);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 table{
     width: 100%;
     table-layout:fixed;
 }
+
 .tabla-titulo{
     font-family: sans-serif;
     font-style: italic;
@@ -195,58 +233,24 @@ tbody td {
 tbody td img {
     width: 100%;
 }
-article {
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    position: sticky;
-    background-color: rgb(224, 224, 112);
-}
-
-.h2 {
-    font-style: italic;
-    color: rgb(9, 55, 61);
-    font-weight: bolder;
-}
-
-.pregunta {
-    font-size:x-large;
-}
-
+/*BOTON REDIRECCION*/
 .whatsapp {
     position: fixed;
     border-radius: 50%;
     bottom: 20px;
     right: 20px;
 }
-
+.whatsapp:hover{
+    
+}
+/*PIE DE PAGINA*/
 footer {
     margin-top:  100px;
     margin-bottom: 0;
 }
 
 
-
-
-
-label {
-    display: block;
-    width: fit-content;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    font-style: italic;
-    background-color: rgb(224, 224, 112);
-    font-weight: bold;
-}
-
-
-
-button:hover{
-    background-color: rgb(224, 224, 112);
-    border: 2px solid rgba(20, 55, 61, 0.692);
-}
+/*PQRS Y NOSOTROS*/
 
 #mision {
     font-size: 30px;
