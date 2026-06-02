@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="styless.css/styless.css">
 </head>
 <body>
-    <img id="imagen" src="images/logo blanco.jpeg" alt="" width="200">
+    <img id="imagen" src="images/logo blanco.jpeg" alt="logo" width="200">
     <h1 id="titulo">Energía que transforma</h1>
     <header>
         
             <nav>
                 <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="formulario.html">Contactanos</a></li>
                 <li><a href="pqrs.html">PQRS</a></li> 
                 <li><a href="nosotros.html">Sobre nosotros</a></li>
                 <li class="menu-desplegable">
@@ -24,15 +23,16 @@
                             <li><a href="#">Instalación y mantenimiento</a></li>
                             <li><a href="#">Financiación</a></li>
                         </ul>
-</li>
+                </li>
              </ul>
         </nav>   
     </header>
     
     <main>
-            <img id="flyer" src="images/flyer.png.png" alt="" width= 100%>
-            <fieldset>
-                <legend id="titulo">CONTACTANOS</legend>
+        <section class="contenedor">    
+            <img id="flyer" src="images/banner-final.png" alt="banner" width="100%">
+            <fieldset class="formulario-contacto">
+                <h3 id="titulo-formulario">CONTACTANOS</h3>
                 <form action="">
                     <label for="name">Nombre completo:</label>
                     <input type="text" name="name" required>
@@ -41,11 +41,14 @@
                     <label for="tel">Telefono de contacto: </label>
                     <input type="text" name="tel" required>
                     <label for="mensaje">Mensaje: </label>
-                    <textarea name="mensaje" id=""></textarea> 
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
+                    <textarea name="mensaje" id=""></textarea>
+                    <section class="botones">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Borrar</button>
+                    </section>         
                 </form>
             </fieldset>
+        </section>    
             <p class="parrafo">SOMOS UNA EMPRESA DEDICADA A LA INSTALACIÓN Y MANTENIMIENTO DE PANELES SOLARES. NOS COMPROMETEMOS A REDUCIR LAS FACTURAS DE ENERGÍA HASTA UN 70% GRACIAS A NUESTRA TECNOLOGÍA DE VANGUARDIA.</p>
 
             <h2 class="h2">¿ CÓMO AHORRAR LUZ EN CASA ?</h2>
