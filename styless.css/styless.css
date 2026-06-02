@@ -3,55 +3,54 @@ body {
     font-style: italic;
     margin: 0;
     padding: 0;
-    background-color: #fff8ef;
+    background-color: white;
     color: #333333;
 }
 
-header {
-    background-color: rgb(224, 224, 112);
-    margin-top: 20px;
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
+/*LOGO*/
 #imagen {
-    position: relative;
+    display: flex;
     margin-left: 600px;
     margin-bottom: 0px;
-    background-color: rgb(173, 168, 168);
 }
-
+/*LEMA*/
 #titulo {
     position: relative;
     margin-left: 550px;
+    font-family: sans-serif;
     font-style: italic;
     color: rgb(9, 55, 61);
     font-size:xx-large;
-    
 }
-
+/*MENU DE NAVEGACION*/
+header {
+    background-color: rgb(224, 224, 112);
+    margin-top: 20px;
+    padding-top: 5px;
+}
+/*INFORMACION DEL HEADER- LISTA*/
 nav {
     padding: 10px;
-    border-radius: 10px;
+    top: 0;
+    margin: 0;
+    border-radius: 0;
     position: sticky;
     background-color: rgb(224, 224, 112);
+    z-index: 1000;
 }
 
 nav ul{
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin: 0%;
+    padding: 0%;
+    width: 100%;
 }
-
-li a:hover {
-    border-radius: 5px;
-    background-color:  rgb(245, 193, 52);
-}
-
-li a {
-    text-decoration: none;
-    color:  rgb(9, 55, 61);
-    font-weight: bolder;
-    font-style: italic;
-}
-
 nav li{
     font-size: bold;
     font-style: italic;
@@ -61,70 +60,99 @@ nav li{
     display: inline-block;
 }
 
-li label{
-    display: inline-block;
-    color: rgb(9, 55, 61);
-}
-
-option {
-    font-family:sans-serif; 
+li a {
+    text-decoration: none;
+    color:  rgb(9, 55, 61);
+    font-weight: bolder;
     font-style: italic;
+    padding: 10px;
 }
 
+li a:hover {
+    border-radius: 5px;
+    background-color:  rgb(245, 193, 52);
+    border: 2px solid rgba(20, 55, 61, 0.692);
+}
+/*NUESTROS SERVICIOS*/
+.menu-desplegable {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-desplegable-menu {
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    top: 100%;
+    left: 0;
+    background-color:  rgb(224, 224, 112);
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgb(9, 55, 61);
+    z-index: 1000;
+    min-width: 180px;    
+}
+
+.menu-desplegable:hover .menu-desplegable-menu {
+    display: block;
+}
+
+.menu-desplegable li a {
+    display: block;
+    padding: 3px 8px;
+    text-decoration: none;
+    color:  rgb(9, 55, 61);
+}
+
+.menu-desplegable li a:hover {
+    background-color:  rgb(245, 193, 52);
+    
+}
+/*SECTION DEL FORMULARIO*/
+.contenedor {
+    position: relative; 
+    width: 100%;
+}
+/*IMAGEN DE BANNER*/
 #flyer {
     margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+}
+/*FORMULARIO*/
+main section fieldset {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    width: 30%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 50px 5px;
+    border: none;
+    box-shadow: 0px 4px 12px  rgb(9, 55, 61);
+    z-index: 1;
 }
 
-.parrafo {
-    font-size: xx-large;
-    color: rgb(26, 105, 2);
+#titulo-formulario{
     text-align: center;
-    font-style: italic;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.class{ color: rgba(20, 55, 61, 0.692);
-    border: 2px solid;
-    border-radius: 50%;
-    margin-right: 200px;
-    }
-
-article {
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    position: sticky;
-    background-color: rgb(224, 224, 112);
-}
-
-.h2 {
-    font-style: italic;
-    color: rgb(9, 55, 61);
-    font-weight: bolder;
-}
-
-.pregunta {
-    font-size:x-large;
-}
-
-.whatsapp {
-    position: fixed;
-    border-radius: 50%;
-    bottom: 20px;
-    right: 20px;
-}
-
-footer {
-    margin-top:  100px;
-    margin-bottom: 0;
-}
-
-fieldset {
-    margin-top:  70px;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
 }
 
 input:focus {
-    background-color: rgb(159, 172, 155);
-    border: 3px solid rgba(20, 55, 61, 0.692);
+    border: 4px solid  rgb(9, 55, 61);
 }
 
 label {
@@ -138,17 +166,100 @@ label {
     background-color: rgb(224, 224, 112);
     font-weight: bold;
 }
-
-button{
-    display: block;
-    margin: 10px;
-
+section .botones{
+     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    padding-top: 30px;
 }
 
 button:hover{
     background-color: rgb(224, 224, 112);
     border: 2px solid rgba(20, 55, 61, 0.692);
 }
+
+/*PREGUNTA*/
+.pregunta {
+    position: flex;
+    text-align: center;
+    background-color:  rgb(224, 224, 112) ;
+    font-family: sans-serif;
+    font-style: italic;
+    color: rgb(9, 55, 61);
+    font-size:xx-large;
+    padding: 10px;
+    
+}
+/*RESPUESTA*/
+.respuesta {
+    color: #40a34b;
+    font-size:x-large;
+    font-family: sans-serif;
+    font-style: italic;
+    border: 3px solid rgb(9, 55, 61);
+    border-radius: 20px;
+    padding: 80px;
+}
+/*TABLA CON IMAGENES*/
+.instalaciones{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(224, 224, 112);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    table-layout:fixed;
+}
+
+.tabla-titulo{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: xx-large;
+    width: 100%;
+    padding: 30px; 
+    text-align: center; 
+}
+
+tbody td {
+    text-align: center;
+    padding: 20px;
+}
+
+tbody td img {
+    width: 100%;
+}
+/*BOTON REDIRECCION*/
+.whatsapp {
+    position: fixed;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 1001;
+}
+.whatsapp:hover{
+    box-shadow: 1px 4px green;
+}
+/*PIE DE PAGINA*/
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top:  80px;
+    bottom: 0;
+    background-color:  rgb(224, 224, 112);
+    border-top: 1px solid rgb(9, 55, 61) ;
+    
+}
+
+
+/*PQRS Y NOSOTROS*/
 
 #mision {
 margin-top: 30px;
