@@ -241,3 +241,31 @@ fieldset {
     100% { opacity: 0; }
 }
 
+#equipo {
+    color: black;
+    background-color: rgb(224, 224, 112);
+    font-style: italic;
+    font-size: 30px;
+    text-shadow: 2px 8px 2px rgba(20, 55, 61, 0.692);
+
+}
+
+#equipo1 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px;
+}
+
+.tarjeta-equipo {
+    text-align: center;
+    margin: 40px;
+}
+
+.tarjeta-equipo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
