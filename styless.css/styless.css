@@ -315,6 +315,8 @@ section ul{
 
 }
 
+/*EQUIPO*/
+
 #banner {
     margin-top: 20px;
     position: relative;
@@ -406,3 +408,28 @@ section.walle p{
     margin-top: 10px;
 }
 
+/*walle*/
+section#quienes-somos h1 {
+    color: rgba(20, 55, 61, 0.692);
+    background-color: rgb(224, 224, 112);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+section#quienes-somos p {
+     font-size: 25px;
+    text-align: left;
+}
+
+section#numeros h1 {
+    color: rgba(20, 55, 61, 0.692);
+    background-color: rgb(224, 224, 112);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+}
+section#numeros p {
+     font-size: 25px;
+    text-align: left;
+}
